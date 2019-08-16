@@ -1,0 +1,436 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	padding: 0;
+	margin: 0;
+	color: #8C8C8C;
+}
+@font-face{
+	src: url(../fonts/Khand-Regular.ttf);
+	font-family: khand;
+}
+.container{
+	width: 100%;
+	min-height: 600px;
+	background-color: #eee;
+}
+.container .sideBar{
+	width: 15%;
+	min-height: 600px;
+	background-color: #fff;
+	float: left;
+}
+.container .mainContent{
+	width: 85%;
+	min-height: 600px;
+	float: right;
+	background-color: #eee;
+}
+.container .sideBar .sideBarHead{
+	width: 100%;
+	height: 50px;
+	background-color: #EE0D0D;
+	color: #fff;
+	padding: 15px 20px;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.container .sideBar .sideBarHead p{
+	margin: 0;
+}
+.container .sideBar .sideBarHead .fa{
+	color: #FBBA06;
+	padding-right: 20px;
+}
+.container .sideBar ul{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.container .sideBar ul li{
+	width: 100%;
+	padding: 10px 20px;
+}
+.container .sideBar ul li:hover{
+	background-color: #F5F5F5;
+}
+.container .sideBar ul li a{
+	text-decoration: none;
+	color: #676767;
+}
+.container .sideBar ul li a .fa{
+	padding-right: 20px;
+}
+.container .sideBar ul li:hover a .fa{
+	color: #EE2626;
+}
+.container .mainContent header{
+	width: 100%;
+	height: 50px;
+	padding: 10px 40px;
+	background-color: #fff;
+}
+.container .mainContent .headerRight{
+	width: 50%;
+	min-height: 25px;
+	border-right: 1px solid #aaa;
+	padding: 0 10px;
+	float: left;
+}
+.container .mainContent .headerRight .search{
+	width: 65%;
+	float: left;
+	background-color: #F5F5F5;
+	border-radius: 20px;
+}
+.container .mainContent .headerRight .search input{
+	float: left;
+	padding: 10px;
+	outline: none;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	width: 80%;
+}
+.container .mainContent .headerRight .search i{
+	float: right;
+	margin: 5px 10px;
+	cursor: pointer;
+}
+.container .mainContent .headerRight .lang{
+	width: 30%;
+	float: right;
+}
+.container .mainContent .headerRight .lang select{
+	border: none;
+	outline: none;
+	width: 100px;
+}
+.container .mainContent .headerRight .lang span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	padding:4px 5px;
+	margin-right: 10px;
+	background-color: #f5f5f5;
+	border-radius: 50%;
+}
+.container .mainContent .headerRight .lang span .fa{
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 auto;
+}
+.container .mainContent .headerLeft{
+	width: 50%;
+	float: right;
+}
+.container .mainContent .headerLeft .currentUser{
+	width: 37%;
+	float: right;
+}
+.container .mainContent .headerLeft .currentUser .profile_Pics img{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	float: left;
+	background-color: #aaa;
+	cursor: pointer;
+}
+.container .mainContent .headerLeft .currentUser .status{
+	float: right;
+	}
+.container .mainContent .headerLeft .currentUser .status p{
+	display: inline-block;
+	margin: 0;
+	color: #4F5467;
+	font-weight: bold;
+	font-size: 12px;
+}
+.container .mainContent .headerLeft .currentUser .status p i{
+	margin-left: 10px;
+}
+.container .mainContent .headerLeft .currentUser .status span{
+	color: #bbb;
+	display: inline-block;
+}
+.container .mainContent .headerLeft .notifications{
+	width: 25%;
+	float: right;
+	padding-top: 10px;
+	margin-right: 20px;
+	border-right: 1px solid #777;
+}
+.container .mainContent .headerLeft .notifications .notify{
+	width: 24px;
+	height: 24px;
+	background-color: #eee;
+	border-radius: 50%;
+	padding:4px 6px;
+	margin-right: 10px;
+	position: relative;
+}
+.container .mainContent .headerLeft .notifications .notify .fa{
+	font-size: 14px;
+	display: inline-block;
+	margin: 0 auto;
+	color: #828282;
+	cursor: pointer;
+}
+.container .mainContent .headerLeft .notifications .notify.one .counter{
+	background-color: #EE2626;
+}
+.container .mainContent .headerLeft .notifications .notify.two .counter{
+	background-color: #8BC34A;
+}
+.container .mainContent .headerLeft .notifications .notify.three .counter{
+	background-color: #FCB731;
+}
+.container .mainContent .headerLeft .notifications .notify .counter{
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	cursor: pointer;
+	background-color: #eee;
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	padding: 4px 6px;
+	font-size: 14px;
+	color: #fff;
+}
+.container .mainContent .currSubMenu{
+	margin:  30px 0;
+	padding: 0 60px;
+}
+.container .mainContent .currSubMenu span{
+	color: #333;
+}
+.container .mainContent .details{
+	width: 90%;
+	margin: 0 auto 50px;
+	min-height: 650px;
+}
+.container .mainContent aside{
+	min-height: 500px;
+	width: 35%;
+	float: left;
+}
+.container .mainContent aside .profile, .followers{
+	width: 100%;
+	min-height: 300px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.container .mainContent aside .followers{
+	margin-bottom: 0;
+	min-height: 100px;
+}
+.container .mainContent aside .followers .social{
+	padding: 10px 30px;
+}
+.container .mainContent aside .followers .social span{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 15px;
+	margin: 10px;
+	color: #fff;
+	font-size: 20px;
+}
+.container .mainContent aside .followers .social span.fa-facebook{
+	background-color: #475E98;
+}
+.container .mainContent aside .followers .social span.fa-twitter{
+	background-color: #55ACEE;
+}
+.container .mainContent aside .followers .social span.fa-google-plus{
+	background-color: #DC4A38;
+}
+.container .mainContent aside .followers .social span.fa-linkedin{
+	background-color: #1565C0;
+}
+.container .mainContent aside .profile h3, .followers h3, article .progress h3{
+	padding: 18px 20px;
+	color: #777;
+	margin: 0;
+}
+.container .mainContent aside .profile hr, .followers hr, article .progress hr{
+	margin: 0;
+}
+.container .mainContent aside .profile h3 i, .followers i,article .progress i{
+	display: inline-block;
+	float: right;
+}
+.container .mainContent aside .profile .photo{
+	width: 100%;
+	height: auto;
+}
+.container .mainContent article .description .desc_left .photo2{
+	width: 100px;
+	height: 100px;
+	float: left;
+	display: inline-block;
+	position: absolute;
+	top: -50px;
+	left: 30px;
+}
+.container .mainContent aside .profile .photo img,
+.container .mainContent article .description .desc_left .photo2 img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	margin: 40px calc(((100% -100px) / 3) + 10px) 0;
+}
+.container .mainContent article .description .desc_left .photo2 img{
+	margin: 0;
+	border: 5px solid #fff;
+}
+.container .mainContent aside .profile .profile_details{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	padding: 20px 30px;
+}
+.container .mainContent aside .profile .profile_details h3{
+	margin: 0;
+	padding: 0;
+	color: #333;
+}
+.container .mainContent aside .profile .profile_details .fa{
+	cursor: pointer;
+	padding: 10px;
+}
+.container .mainContent article{
+	min-height: 200px;
+	width: 63%;
+	float: right;
+}
+.container .mainContent article .description{
+	width: 100%;
+	min-height: 350px;
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+.container .mainContent article .description .desc_header{
+	width: 100%;
+	min-height: 120px;
+	background-color: #3B4DB1;
+}
+.container .mainContent article .description .desc_header div{
+	float: right;
+	width: 15%;
+	min-height: 40px;
+	vertical-align: bottom;
+	display: inline-block;
+	padding: 0 20px;
+	margin: 70px 0px 0;
+	position: relative;
+	bottom: 0;
+}
+.container .mainContent article .description .desc_header div:nth-child(2){
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+.container .mainContent article .description .desc_header div span{
+	display: block;
+	color: #fff;
+}
+.container .mainContent article .description .desc_left{
+	width: 25%;
+	min-height: 150px;
+	float: left;
+	position: relative;
+	padding: 70px 0px 20px 40px;
+}
+.container .mainContent article .description .desc_left:nth-child(2) .fa{
+	margin-right: 20px;
+}
+.container .mainContent article .description .desc_left h3{
+	font-size: 14px;
+	color: #333;
+	margin: 0;
+}
+.container .mainContent article .description .desc_right{
+	width: 70%;
+	min-height: 200px;
+	float: right;
+	padding-right: 30px;
+}
+.container .mainContent article .description .desc_right p{
+	margin: 30px 0;
+	letter-spacing: 1.5px;
+	line-height: 25px;
+	color: #555;
+}
+.container .mainContent article .progress{
+	min-height: 200px;
+	background-color: #fff;
+	width: 100%;
+}
+.container .mainContent article .progress .progress_bars{
+	width: 100%;
+	min-height: 200px;
+}
+.container .mainContent article .progress .progress_bars table{
+	width: 100%;
+	padding: 30px 5%;
+	min-height: 200px;
+}
+.container .mainContent article .progress .progress_bars table tr{
+	width: 100%;
+}
+.container .mainContent article .progress .progress_bars table .progress_desc{
+	width: 20%;
+	float: left;
+}
+.container .mainContent article .progress .progress_bars table .bars{
+	width: 75%;
+	float: right;
+	margin-bottom: 10px;
+}
+.container .mainContent article .progress .progress_bars table .bars .bar_cont{
+	width: 100%;
+	height: 5px;
+	background-color: #eee;
+	margin: 10px;
+	border-radius: 3px;
+}
+.container .mainContent article .progress .progress_bars table .bars .bar_cont .bar1{
+	width: 40%;
+	height: 5px;
+	background-color: #E99823;
+	border-radius: 3px;
+}
+.container .mainContent article .progress .progress_bars table .bars .bar_cont .bar2{
+	width: 30%;
+	height: 5px;
+	background-color: #00BFA5;
+	border-radius: 3px;
+}
+.container .mainContent article .progress .progress_bars table .bars .bar_cont .bar3{
+	width: 45%;
+	height: 5px;
+	background-color: #82B1FF;
+	border-radius: 3px;
+}
+.container .mainContent article .progress .progress_bars table .bars .bar_cont .bar4{
+	width: 38%;
+	height: 5px;
+	background-color: #F83B00;
+	border-radius: 3px;
+}
+.container .mainContent p.footer{
+	display: block;
+	margin-left: 60px;
+	margin-top: 0;
+}
+
+.container .mainContent p.footer a{
+	color: #aaa;
+	text-decoration: none;
+}
+
+.container .mainContent p.footer a:hover{
+	color: #F83B00;
+}
