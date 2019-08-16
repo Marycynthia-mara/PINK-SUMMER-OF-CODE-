@@ -1,0 +1,322 @@
+*{
+	box-sizing: border-box;
+}
+
+@font-face{
+	font-family: khand;
+	src: url(../fonts/Khand-Regular.ttf);
+}
+
+@font-face{
+	font-family: Pacifico;
+	src: url(../fonts/Pacifico-Regular.ttf);
+}
+
+@font-face{
+	font-family: Roboto;
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face{
+	font-family: Tajawal;
+	src: url(../fonts/Tajawal-Regular.ttf);
+}
+
+@font-face{
+	font-family: Boogaloo;
+	src: url(../fonts/Boogaloo-Regular.ttf);
+}
+
+
+html, body{
+	margin: 0;
+	padding: 0;
+	font-family: Tajawal;
+}
+.container{
+	width: 100%;
+	min-height: 600px;
+	background-color: #eee;
+	padding: 0 20px 0px;
+}
+
+.container header{
+	background-color: #1E1E1E;
+	margin-bottom: 30px;
+}
+
+.container footer{
+	background-color: #1E1E1E;
+	width: 100%;
+	height:50px;
+	padding: 10px;
+	color: #fff;
+}
+
+.container footer p{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+.container h1{
+	text-align: center;
+	margin: 0;
+	padding: 20px 20px 40px;
+	color: #eee;
+	font-family: boogaloo;
+	font-size: 2.4em;
+}
+
+.container .speeches{
+	width: 100%;
+	min-height: 250px;
+}
+.container .speech{
+	min-height: 50px;
+	width: 50%;
+	position: relative;
+}
+.container .speech.right{
+	float: right;
+}
+
+.container .speech img{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;}
+
+.container .speech p{
+	width: 85%;
+	float: right;
+	padding: 10px;
+	background-color: #fff;
+	border: 2px solid #8BBF50;
+	border-radius: 5px;
+	position: relative;
+	font-family: Boogaloo;
+	z-index: 2;
+}
+
+.container .speech p.two{
+	border: 2px solid #CC4D42;
+}
+
+
+.container .speech .say{
+	width: 30px;
+	height: 30px;
+	border: 2px solid #8BBF50;
+	position: absolute;
+	left: 85px;
+	top: 20px;
+	transform: skewY(30deg);
+	transform: rotate(40deg);
+	background-color: #fff;
+}
+
+.container .speech.right .say{
+	border-bottom: 2px solid #CC4D42;
+	border-left: 2px solid #CC4D42;
+}
+
+.container .trading_cards{
+	width: 100%;
+	min-height: 2650px;
+	background-color: #fff;
+	padding: 1%;
+}
+
+.container .trading_cards .each_card{
+	width: 22%;
+	min-height: 300px;
+	background-color: #2D92A4;
+	float: left;
+	margin: 1.5%;
+	padding: 10px;
+	position: relative;
+}
+
+.container .trading_cards .each_card h3, h4,p{
+	margin: 0;
+	padding: 5px 0;
+	float:left;
+}
+
+.container .trading_cards .each_card h3, h4{
+	padding: 0;
+	font-size: 1.2em;
+}
+
+.container .trading_cards .each_card h3{
+	margin-right: 30px;
+	font-family: khand;
+	font-size: 1.7em;
+	text-transform: uppercase;
+	color:#A6E1F4;
+}
+
+.container .trading_cards .each_card h4 p{
+	float: right;
+	font-size: .8em;
+	font-weight: normal;
+}
+
+.container .trading_cards .each_card h4{
+	float:right;
+	color:#fff;
+}
+
+.container .trading_cards .each_card .logos{
+	position: absolute;
+	width: 120px;
+	height: 50px;
+	top: 60px;
+	right: 10px;
+	background-color: #2D92A4;
+	z-index: 3;
+	border-top: 5px solid #fff;
+	border-right: 5px solid #fff;
+	border-left: 5px solid #fff;
+	border-radius: 10px 10px 0 0;
+}
+
+.container .trading_cards .each_card .logos .fa{
+	font-size: 30px;
+	padding: 5px;
+	color: #fff;
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 10px; 
+}
+
+.container .trading_cards .each_card .main{
+	width: 100%;
+	height: 300px;
+	background-image: url(../images/anim1.PNG);
+	background-size: cover;
+	background-position: center;
+	background-color: #aaa;
+	margin-top: 95px;
+	border: 5px solid #fff;
+	border-radius: 10px 0 10px 10px;
+	position: relative;
+}
+
+.container .trading_cards .each_card.two .main{
+	background-image: url(../images/anim2.PNG);
+}
+
+.container .trading_cards .each_card.three .main{
+	background-image: url(../images/anim3.PNG);
+}
+
+.container .trading_cards .each_card.four .main{
+	background-image: url(../images/anim4.PNG);
+}
+
+.container .trading_cards .each_card.five .main{
+	background-image: url(../images/anim5.PNG);
+}
+
+.container .trading_cards .each_card.six .main{
+	background-image: url(../images/anim6.PNG);
+}
+
+.container .trading_cards .each_card.seven .main{
+	background-image: url(../images/anim7.PNG);
+}
+
+.container .trading_cards .each_card.eight .main{
+	background-image: url(../images/anim8.PNG);
+}
+
+.container .trading_cards .each_card.nine .main{
+	background-image: url(../images/anim9.PNG);
+}
+
+.container .trading_cards .each_card.ten .main{
+	background-image: url(../images/anim10.PNG);
+}
+
+.container .trading_cards .each_card.eleven .main{
+	background-image: url(../images/anim11.PNG);
+}
+
+.container .trading_cards .each_card.twelve .main{
+	background-image: url(../images/anim12.PNG);
+}
+
+.container .trading_cards .each_card.thirteen .main{
+	background-image: url(../images/anim13.PNG);
+}
+
+.container .trading_cards .each_card.fourteen .main{
+	background-image: url(../images/anim14.PNG);
+}
+
+.container .trading_cards .each_card.fifteen .main{
+	background-image: url(../images/anim15.PNG);
+}
+
+.container .trading_cards .each_card.sixteen .main{
+	background-image: url(../images/anim16.PNG);
+}
+
+.container .trading_cards .each_card.seventeen .main{
+	background-image: url(../images/anim17.PNG);
+}
+
+.container .trading_cards .each_card.eighteen .main{
+	background-image: url(../images/anim18.PNG);
+}
+
+.container .trading_cards .each_card.nineteen .main{
+	background-image: url(../images/anim19.PNG);
+}
+
+.container .trading_cards .each_card.twenty .main{
+	background-image: url(../images/anim20.PNG);
+}
+
+.container .trading_cards .each_card .main .fa{
+	position: absolute;
+	bottom: 10px;
+	font-size: 90px;
+	color: #eee;
+}
+
+.container .trading_cards .each_card .main .fa.fa-search{
+	left: 20px;
+}
+
+.container .trading_cards .each_card .main .fa.fa-sun-o{
+	right: 20px;
+}
+
+.container .trading_cards .each_card .main span{
+	position: absolute;
+	font-weight: bold;
+	font-size: 14px;
+	bottom: 35px;
+	color: #000;
+	display: inline-block;
+	text-align: center;
+	z-index: 3;
+}
+
+.container .trading_cards .each_card .main span.one{
+	left: 30px;
+}
+
+.container .trading_cards .each_card .main span.two{
+	right: 45px;
+	float: right;
+}
+
+.container .trading_cards .each_card .description{
+	color: #fff;
+	font-family: roboto;
+	padding: 5px 0;
+	text-align: center;
+}
